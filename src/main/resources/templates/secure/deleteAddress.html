@@ -1,0 +1,37 @@
+<!--  
+ * This is the delete - address page. Accessible only to logged in users and admins
+ * 
+ * @author Adegoke Akanbi. Student ID: 991719830
+ * @version 1.0
+ */
+-->
+<html xmlns:th="https://www.thymeleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<title>Products</title>
+		<link href="../static/css/style.css" th:href="@{/css/style.css}" type="text/css" media="all" rel="stylesheet">
+		<script src="../static/js/script.js" th:src="@{/js/script.js}"></script>
+	</head>
+	<body>
+		<header>
+			<img id="system-logo" height="95px"
+				src="../../static/images/spring-boot-logo.png"
+				th:src="@{/images/spring-boot-logo.png}" 
+			/>
+			<span id="title">Zu'Ma sHop 2023</span>
+			
+			
+		</header>
+		<p><a th:href="@{/secure/address}">go back</a></p>
+		
+		<form method="post" th:action="@{/secure/deleteAddress}" >
+			Are you sure you want to delete your address details? <br>
+			<input type="submit" id="delete" value="Yes!" />
+		</form>
+		
+		
+		<footer>
+				Copyright &copy; Adegoke Akanbi
+		</footer>
+	</body>
+</html>

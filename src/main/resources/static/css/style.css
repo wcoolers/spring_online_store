@@ -1,0 +1,23 @@
+/**
+ * This is the css file, contains minimal styling. Focus is on implementation.
+ * 
+ * @author Adegoke Akanbi. Student ID: 991719830
+ * @version 1.0
+ */
+
+.error{
+	color: red;
+}
+#title {
+	font-size: 3rem;
+
+}
+header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#delete {
+	background-color: red;
+	
+}
